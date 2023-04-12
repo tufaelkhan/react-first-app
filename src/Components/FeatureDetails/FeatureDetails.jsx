@@ -65,7 +65,7 @@ const FeatureDetails = () => {
             <h4 className='mb-3'><span className='text-2xl'>Phone :</span><span> {phone}</span></h4>
             <h4 className='mb-3'><span className='text-2xl'>Email : </span><span>{email}</span></h4>
             <h4 className='mb-3'><span className='text-2xl'>Address :</span> <span>{address}</span></h4>
-            <button onClick={()=>addToDb(id, jobb)} className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white'>Apply Now</button>
+            <button onClick={()=>addToDb(id, jobb)} className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10'>Apply Now</button>
             </div>
             </div>
         </div>
