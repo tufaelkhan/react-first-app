@@ -1,12 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { getShoppingCart } from '../../utilities/fakeDB';
+import Singlejob from '../Singlejob/Singlejob';
 
 const Applied = () => {
-    const jobs = useLoaderData()
-    console.log(jobs);
+    const [applies, setApplies] = useState([])
+    const singlejob = useLoaderData()
+
+    let appliedjob = []
+    const savedId = getShoppingCart()
+    useEffect(()=>{
+        for(const id in savedId){
+            const foundjob = singlejob.find(job=> job.id == id);
+            // console.log(job);
+            if(foundjob){
+                appliedjob.push(foundjob)
+            }
+            if(appliedjob){
+                setApplies(appliedjob)
+            }
+        }
+    },[])
+    console.log(applies);
+    // const { location, title, job, place, responsibility,  name, address, salary, jobtitle,image, id } = applies
     return (
         <div>
-            <h3>all are applied</h3>
+            <h3>Applied job</h3>
+            <div>
+           
+            {
+                applies.map(apply => <Singlejob
+                key={apply.id}
+                apply={apply}
+                ></Singlejob>)
+            }
+            </div>
         </div>
     );
 };

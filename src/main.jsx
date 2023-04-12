@@ -13,6 +13,7 @@ import Blog from './Components/Blog/Blog';
 import FeatureDetails from './Components/FeatureDetails/FeatureDetails';
 import Error from './Components/Error/Error';
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -35,7 +36,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/applied',
-        element: <Applied></Applied>
+        element: <Applied></Applied>,
+        loader: ()=> fetch('/company.json')
       },
       {
         path: '/blog',

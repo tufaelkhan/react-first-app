@@ -38,11 +38,11 @@ const FeatureDetails = () => {
         const details = jobb.find(job => job.id === idd.Id)
         setSinglejob(details)
         // console.log(details.description);
-    },[singlejob])
+    },[])
     const {office, description, location, title, job, place, responsibility,  name, address, salary, id, education, experience, phone, email, jobtitle,  } = singlejob;
 
     // add to local storage
-    const dataAddToDb= (id, jobb)=>{
+    const dataAddToDb= (id)=>{
         addToDb
     }
     return (
@@ -65,7 +65,7 @@ const FeatureDetails = () => {
             <h4 className='mb-3 flex items-center'><span><PhoneIcon className="h-6 w-6 text-graye-500 mr-1" /></span><span className='text-2xl'>Phone :</span><span> {phone}</span></h4>
             <h4 className='mb-3 flex items-center'><span><EnvelopeIcon className="h-6 w-6 text-gray-500 mr-1" /></span><span className='text-2xl'>Email : </span><span>{email}</span></h4>
             <h4 className='mb-3 flex items-center'><span><MapPinIcon className="h-6 w-6 text-gray-500 mr-1" /></span><span className='text-2xl'>Address : </span> <span>{address}</span></h4>
-            <button onClick={()=>addToDb(id, jobb)} className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10'>Apply Now</button>
+            <button onClick={()=>addToDb(id)} className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10'>Apply Now</button>
             </div>
             </div>
         </div>
