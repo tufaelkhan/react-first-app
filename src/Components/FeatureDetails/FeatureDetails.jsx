@@ -47,7 +47,7 @@ const FeatureDetails = () => {
     }
     return (
         <div>
-            <h3 className='text-4xl text-center mb-10'>feature details</h3>
+            <h3 className='text-4xl text-center mb-10'>job details</h3>
             <div className='grid grid-cols-2 ml-10 mr-10'>
             <div className='ml-12'>
             <h4 className='mb-5'><span className='text-2xl'>Job Description:</span> <span className='text-sm'>{description}</span></h4>
@@ -59,12 +59,12 @@ const FeatureDetails = () => {
             </div>
             <div className='ml-52 h-420'>
             <h3 className='text-3xl mb-5'>Job Details</h3><hr />
-            <h4 className='mb-3 flex items-center'><span><CurrencyDollarIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>Salary: </span><span>{salary}</span></h4>
-            <h4 className='mb-3 flex items-center'><span><BriefcaseIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>job title:</span> <span>{jobtitle}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><CurrencyDollarIcon className="h-6 w-6 text-gray-500 mr-1" /></span><span className='text-2xl'>Salary: </span><span>{salary}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><BriefcaseIcon className="h-6 w-6 text-gray-500 mr-1" /></span><span className='text-2xl'>job title:</span> <span>{jobtitle}</span></h4>
             <h3 className='text-3xl mb-5'>Contact Information</h3><hr />
-            <h4 className='mb-3 flex items-center'><span><PhoneIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>Phone :</span><span> {phone}</span></h4>
-            <h4 className='mb-3 flex items-center'><span><EnvelopeIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>Email : </span><span>{email}</span></h4>
-            <h4 className='mb-3 flex items-center'><span><MapPinIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>Address : </span> <span>{address}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><PhoneIcon className="h-6 w-6 text-graye-500 mr-1" /></span><span className='text-2xl'>Phone :</span><span> {phone}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><EnvelopeIcon className="h-6 w-6 text-gray-500 mr-1" /></span><span className='text-2xl'>Email : </span><span>{email}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><MapPinIcon className="h-6 w-6 text-gray-500 mr-1" /></span><span className='text-2xl'>Address : </span> <span>{address}</span></h4>
             <button onClick={()=>addToDb(id, jobb)} className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10'>Apply Now</button>
             </div>
             </div>
