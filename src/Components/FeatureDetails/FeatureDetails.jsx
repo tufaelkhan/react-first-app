@@ -2,7 +2,7 @@ import { data } from 'autoprefixer';
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from '../../utilities/fakeDB';
-
+import {MapPinIcon, CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, EnvelopeIcon} from '@heroicons/react/24/solid'
 const FeatureDetails = () => {
     // const dynamic = useParams()
     // const details = useLoaderData();
@@ -59,12 +59,12 @@ const FeatureDetails = () => {
             </div>
             <div className='ml-52 h-420'>
             <h3 className='text-3xl mb-5'>Job Details</h3><hr />
-            <h4 className='mb-3'><span className='text-2xl'>Salary: </span><span>{salary}</span></h4>
-            <h4 className='mb-3'><span className='text-2xl'>job title:</span> <span>{jobtitle}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><CurrencyDollarIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>Salary: </span><span>{salary}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><BriefcaseIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>job title:</span> <span>{jobtitle}</span></h4>
             <h3 className='text-3xl mb-5'>Contact Information</h3><hr />
-            <h4 className='mb-3'><span className='text-2xl'>Phone :</span><span> {phone}</span></h4>
-            <h4 className='mb-3'><span className='text-2xl'>Email : </span><span>{email}</span></h4>
-            <h4 className='mb-3'><span className='text-2xl'>Address :</span> <span>{address}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><PhoneIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>Phone :</span><span> {phone}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><EnvelopeIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>Email : </span><span>{email}</span></h4>
+            <h4 className='mb-3 flex items-center'><span><MapPinIcon className="h-6 w-6 text-blue-500" /></span><span className='text-2xl'>Address : </span> <span>{address}</span></h4>
             <button onClick={()=>addToDb(id, jobb)} className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10'>Apply Now</button>
             </div>
             </div>
