@@ -16,7 +16,7 @@ const Features = ({company}) => {
                     <h2 className='flex'><span><MapPinIcon className="h-6 w-6 text-blue-500" /></span><span>{address}</span></h2>
                     <h2 className='ml-4 flex'><span><CurrencyDollarIcon className="h-6 w-6 text-blue-500" /></span><span>{salary}</span></h2>
                 </div>
-                <p><Link to={`../feature/${id}`}><button className='text-1xl bg-cyan-500 rounded p-1 pl-2 pr-2 text-white mt-2'>View Details</button></Link></p>
+                <p><Link to={`/feature/${id}`}><button className='text-1xl bg-cyan-500 rounded p-1 pl-2 pr-2 text-white mt-2'>View Details</button></Link></p>
         </div>
     );
 };

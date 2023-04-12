@@ -51,6 +51,7 @@ const Home = () => {
               }
             </div>
         </div>
+        <button className='text-1xl bg-cyan-500 rounded p-1 pl-2 pr-2 text-white mt-2 text-3xl items-center ml-64 mt-6'>see all</button>
         </div>
     );
 };

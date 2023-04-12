@@ -25,8 +25,8 @@ const Applied = () => {
     // const { location, title, job, place, responsibility,  name, address, salary, jobtitle,image, id } = applies
     return (
         <div>
-            <h3>Applied job</h3>
-            <div>
+            <h3 className='text-4xl items-center '>Applied job</h3>
+            <div className=''>
            
             {
                 applies.map(apply => <Singlejob

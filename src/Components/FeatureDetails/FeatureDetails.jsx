@@ -68,6 +68,7 @@ const FeatureDetails = () => {
             <button onClick={()=>addToDb(id)} className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10'>Apply Now</button>
             </div>
             </div>
+            
         </div>
     );
 };
