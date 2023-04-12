@@ -18,7 +18,7 @@ const Singlejob = ({apply}) => {
             <h2>{salary}</h2>
             </div>
             </div>
-            <div><Link to={`/feature/${id}`}> <button className='text-1xl bg-cyan-500 rounded p-1 pl-2 pr-2 text-white mt-2'>Visit Details</button></Link></div>
+            <div><Link to={`/feature/${id}`}> <button className='text-1xl bg-cyan-500 rounded p-1 pl-2 pr-2 text-white mt-2 ml-12'>Visit Details</button></Link></div>
         </div>
     );
 };
