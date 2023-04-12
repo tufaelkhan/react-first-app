@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title":"Account & Finance",
+        "image": "https://www.merchantmaverick.com/wp-content/uploads/2016/08/bigstock-ACCOUNTING-inscription-coming-324977827.jpg",
+        "availablejob": "200 +job available"
+    },
+    {
+        "id": "2",
+        "title":"Creative Design",
+        "image": "https://blog.photoadking.com/wp-content/uploads/2021/03/1668775910722.jpg",
+        "availablejob": "250 +job available"
+    },
+    {
+        "id": "3",
+        "title":"Marketing & Sales",
+        "image": "https://www.feedough.com/wp-content/uploads/2020/08/what-is-marketing.png",
+        "availablejob": "350 +job available"
+    },
+    {
+        "id": "4",
+        "title":"Engineering Job",
+        "image": "https://www.constructionplacements.com/wp-content/uploads/2020/10/Untitled-design-54.jpg",
+        "availablejob": "280 +job available"
+    }
+]
