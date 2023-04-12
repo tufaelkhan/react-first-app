@@ -25,7 +25,7 @@ const Applied = () => {
     // const { location, title, job, place, responsibility,  name, address, salary, jobtitle,image, id } = applies
     return (
         <div>
-            <h3 className='text-4xl items-center '>Applied job</h3>
+            <h3 className='text-4xl items-center ml-'>Applied job</h3>
             <div className=''>
            
             {
