@@ -26,9 +26,9 @@ const Applied = () => {
     return (
         <div>
             <h3 className='text-4xl items-center ml-48 mb-5'>Applied job</h3>
-            <div className='flex'>
-            <button className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10'>Remote</button>
-            <button className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10'>Onsite</button>
+            <div className='flex m-36'>
+            <button className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10 m-5'>Remote</button>
+            <button className='text-2xl bg-cyan-500 rounded pb-1 pl-10 pr-10 text-white mb-10 m-5'>Onsite</button>
             </div>
             <div className=''>
            
